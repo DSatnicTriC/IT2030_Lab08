@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace WebApp_Individual.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View();
